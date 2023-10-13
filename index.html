@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/11c76f5c9c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Mexxar logo.JPG" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <P>Software Developer</P>
+            <h1>Hi, I'm <span>Pansilu</span> Wickramaarachchi<br>from SriLanka</h1>
+        </div>
+    </div>
+</div>
+<!----------About---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="User_Image.png">
+            </div> 
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, This is Pansilu. I'm 20 years old. I'm from SriLanka.
+                    I did my studies in S.Anthonis collage. 
+                    And currenly working as a intern software Developer at Mexxar.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skils</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+
+                <!--Skills-->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web sites/app Development</li>
+                        <li><span>App Development</span><br>Android/IOS app Development</li>
+                    </ul>
+                </div>
+
+                <!--Experience-->
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2023/03 - 2023/09</span><br>Role - Compliance & Maintanance officer</li>
+                        <li><span>2023/09 - Present</span><br>Role - Software Developer(Intern)</li>
+                    </ul>
+                </div>
+
+                <!--Education-->
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Collage/School</span><br>St.Anthonys Collage Kandy</li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!--Services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i> <!--icon-->
+                <h2>Web Design</h2>
+                <p>Webpage creating</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i> <!--icon-->
+                <h2>App Design</h2>
+                <p>Android/IOS app building</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="w1.avif">
+                <div class="layer">
+                    <h3>To-Do List App</h3>
+                    <p>A To-Do-List app is a digital tool
+                         designed to help users 
+                         manage tasks and stay organized. </p>
+                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="w2.png">
+                <div class="layer">
+                    <h3>Calculater App</h3>
+                    <p>Calculator app is a basic digital tool 
+                        designed for performing mathematical calculations.</p>
+                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="w3.png">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website is a digital platform 
+                        created by an individual to showcase their 
+                        work, skills, and accomplishment.</p>
+                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> panzi.wick@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> +94 778891550</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100010192058161&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/Pansilu_?t=qoXnANw968UZAsW-ZIM09g&s=09"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/pansilu?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="My_CV.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright <i class="fa-regular fa-copyright"></i> Panzi.Wick</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
